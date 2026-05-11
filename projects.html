@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Projects / Publications</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: #e6e6e6;
+  }
+  /* Works on Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1115;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7aa2ff;
+  border-radius: 10px;
+  border: 2px solid #0f1115;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5f8dff;
+}
+
+  /* TOP BAR */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    background: rgba(15, 17, 21, 0.95);
+    border-bottom: 1px solid #1f2430;
+  }
+
+  nav a {
+    color: #cfd6e1;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  nav a:hover {
+    color: #7aa2ff;
+  }
+  /* CLICKABLE PROJECT CARD */
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+  .date {
+    font-size: 12px;
+    color: #7aa2ff;
+    margin-bottom: 12px;
+  }
+.project-link:hover {
+  color: inherit;
+}
+
+/* CARD */
+.card {
+  background: #151922;
+  border: 1px solid #222838;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 22px;
+  transition: 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.project-link:hover .card {
+  border-color: #7aa2ff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(122,162,255,0.08);
+}
+
+/* TITLE */
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 22px;
+  color: #f2f2f2;
+}
+
+/* DESCRIPTION */
+.card p {
+  margin: 0;
+  color: #b3bcc9;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* TAGS */
+.tag {
+  margin-top: 20px;
+  color: #7aa2ff;
+  font-size: 14px;
+}
+
+  /* PAGE CONTAINER */
+  .container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  p.subtitle {
+    color: #9aa4b2;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  /* CARDS */
+  .card {
+    background: #151922;
+    border: 1px solid #222838;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+  }
+
+  .card:hover {
+    border-color: #7aa2ff;
+  }
+
+  .card h2 {
+    margin: 0 0 8px;
+    font-size: 18px;
+  }
+
+  .card p {
+    margin: 0;
+    color: #aab2c0;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .tag {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #7aa2ff;
+  }
+
+  /* BACK LINK */
+  .back {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #7aa2ff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .back:hover {
+    color: #ffffff;
+  }
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html">home</a>
+  <a href="blog.html">blog</a>
+  <a href="press.html">press</a>
+  <a href="reading.html">reading</a>
+</nav>
+
+<div class="container">
+
+  <a class="back" href="index.html">← back to home</a>
+
+  <h1>Projects / Publications</h1>
+  <p class="subtitle">
+    A selected list of works; Check my linkedin for a more complete list of projects
+  </p>
+<!-- PUBLICATION -->
+  <a class="project-link" href="ORS.html">
+  <div class="card">
+    <h2>Full-Duplex Pilot Beam-Rectifier Array for Space Solar Power</h2>
+    <div class="date">April 29th 2026</div>
+    <p>
+      First author; designed poster and presented at IEEE ORSS 2026 conference winning “Best Paper” against 14 teams and a 2,000 stipend to present at a future conference
+    </p>
+    <div class="tag">Publication • IEEE • RF • Wireless Power Transfer • Poster Presentation</div>
+  </div>
+
+
+  <!-- PROJECT 1 -->
+<a class="project-link" href="ringOsc.html">
+
+  <div class="card">
+
+    <h2>Custom Ring Oscillator</h2>
+<div class="date">March 7th 2026</div>
+    <p>
+      Self-studied current-starved ring oscillators to meet provided design
+      specs over tt corner while passing LVS and DRC.
+    </p>
+
+    <div class="tag">
+      Chip Design • Analog • Circuit Design
+    </div>
+
+  </div>
+
+</a>
+
+  <!-- PROJECT 2 -->
+  <a class="project-link" href="digitalDesign.html">
+  <div class="card">
+    <h2>Custom 64-bit Verilog Calculator</h2>
+    <div class="date">September 29th 2025</div>
+    <p>
+      Designed a SystemVerilog calculator to perform 64-bit unsigned integer addition; developed testbench, gaining skills in verification software, Xcelium, SimVision, and coverage analysis (Verdi)
+    </p>
+    <div class="tag">Chip Design • Digital • Circuit Design</div>
+  </div>
+</a> 
+
+  <!-- PROJECT 3 -->
+  <a class="project-link" href="https://devpost.com/software/healthdock" target="_blank">
+  <div class="card">
+    <h2>HealthDoc - HackGT12 Submission</h2>
+    <div class="date">September 29th 2025</div>
+    <p>
+      My first ever hackathon! 
+    </p>
+    <div class="tag">Arduino • Machine Learning • Hackathon • Healthcare</div>
+  </div>
+</a>
+
+
+
+      <!-- PROJECT 4 -->
+  <a class="project-link" href="Exhalo.html" >
+  <div class="card">
+    <h2>Exhalo</h2>
+    <div class="date">April 2025</div>
+    <p>
+     Low-cost, portable, breath-based analysis for diabetes testing. 
+    </p>
+    <div class="tag">Arduino • Poster Presentation • Healthcare</div>
+  </div>
+</a>
+    
+</div>
+
+
+  
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

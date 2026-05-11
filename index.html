@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mira's Page</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: #e6e6e6;
+  }
+/* Works on Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1115;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7aa2ff;
+  border-radius: 10px;
+  border: 2px solid #0f1115;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5f8dff;
+}
+
+  /* TOP NAV */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    background: rgba(15, 17, 21, 0.95);
+    border-bottom: 1px solid #1f2430;
+  }
+
+  nav a {
+    color: #cfd6e1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    color: #7aa2ff;
+  }
+
+  /* HERO */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 70px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /* SQUARE IMAGE */
+  .hero img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #2a2f3a;
+  }
+
+  .hero-text {
+    max-width: 520px;
+  }
+
+  .hero-text h1 {
+    font-size: 44px;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  .hero-text p {
+    color: #aab2c0;
+    line-height: 1.6;
+  }
+
+  /* SECTIONS */
+  .section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 14px;
+    color: #7aa2ff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+  }
+
+  .grid {
+    display: grid;
+    gap: 12px;
+  }
+
+  .card {
+    background: #151922;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #222838;
+    transition: 0.2s;
+  }
+
+  .card:hover {
+    border-color: #7aa2ff;
+  }
+
+  .card a {
+    color: #7aa2ff;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .card a:hover {
+    color: #ffffff;
+  }
+
+  /* FOOTER */
+  footer {
+    margin-top: 60px;
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid #1f2430;
+  }
+
+  .socials a {
+    margin: 0 10px;
+    color: #9aa4b2;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .socials a:hover {
+    color: #7aa2ff;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- TOP NAV -->
+<nav>
+  <a href="projects.html">projects</a>
+  <a href="blog.html">blog</a>
+  <a href="press.html">press</a>
+  <a href="reading.html">reading</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="me.jpeg" alt="me">
+
+  <div class="hero-text">
+    <h1>Hi! I'm Amira.</h1>
+    <p>
+      My name is Amira Malave, and I'm an electrical engineering student at GeorgiaTech focused on RF systems, nanotech, and quantum devices. I also like to build cool stuff, go on adventures, and make music.
+    </p>
+  </div>
+</div>
+
+<!-- PROJECTS PREVIEW -->
+<div class="section">
+  <h2>projects / publications</h2>
+  <div class="grid">
+    <div class="card">
+      Wow so many cool projects 
+      <br><a href="projects.html">view all →</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG PREVIEW -->
+<div class="section">
+  <h2>blog</h2>
+  <div class="grid">
+    <div class="card">
+      blah blah words  
+      <br><a href="blog.html">read blog →</a>
+    </div>
+  </div>
+</div>
+
+<!-- PRESS PREVIEW -->
+<div class="section">
+  <h2>press / mentions</h2>
+  <div class="grid">
+    <div class="card">
+      omg famous
+      <br><a href="press.html">see more →</a>
+    </div>
+  </div>
+</div>
+
+<!-- READING PREVIEW -->
+<div class="section">
+  <h2>reading list</h2>
+  <div class="grid">
+    <div class="card">
+      UNDER CONSTRUCTION  
+      <br><a href="reading.html">full list →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER SOCIALS -->
+<footer>
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/amira-malave/">LinkedIn</a>
+    <a href="https://www.instagram.com/amiramalave/?hl=en">Instagram</a>
+    <a href="https://www.youtube.com/@a_Mirkat/videos">YouTube</a>
+    <a href="https://www.goodreads.com/user/show/164037303-amira-malave">Goodreads</a>
+  </div>
+</footer>
+
+</body>
+</html>

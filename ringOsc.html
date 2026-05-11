@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Custom Ring Oscillator</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: #e6e6e6;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 18px;
+    background: rgba(15,17,21,0.95);
+    border-bottom: 1px solid #1f2430;
+  }
+
+  nav a {
+    color: #cfd6e1;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  nav a:hover {
+    color: #7aa2ff;
+  }
+
+  /* MAIN CONTENT */
+  .container {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .back {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #7aa2ff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .back:hover {
+    color: white;
+  }
+
+  h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    color: #7aa2ff;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  p {
+    color: #aab2c0;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* PDF SECTION */
+  .resources {
+    margin-top: 40px;
+  }
+
+  .resources h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .paper-button {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    background: #151922;
+    border: 1px solid #222838;
+    border-radius: 8px;
+    color: #7aa2ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+  }
+
+  .paper-button:hover {
+    border-color: #7aa2ff;
+    color: white;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html">home</a>
+  <a href="projects.html">projects</a>
+  <a href="blog.html">blog</a>
+  <a href="press.html">press</a>
+  <a href="reading.html">reading</a>
+</nav>
+
+<div class="container">
+
+  <a class="back" href="projects.html">
+    ← back to projects
+  </a>
+
+  <h1>Custom Ring Oscillator</h1>
+
+  <div class="subtitle">
+    Chip Design • Analog • Circuit Design
+  </div>
+
+  <p>
+    For this project, I had to create a custom ring oscillator on Cadence Virtuoso given certain design specs. 
+    While I was required to meet these specs over the tt corner, I also tested over ss and ff corners. I did this project just as 
+    I was starting my first ever microelectronics course, so needless to say the learning curve was steep! Using online resources,
+    I self-studied current-starved ring oscillators and the Cadence software. I had to start from the base components, designing, 
+    testing, and laying out a custom inverter and buffer before designing and laying out my 5-stage ring oscillator. Along the way I also 
+    utilized a testbench and analyzed maestro waveforms to ensure I met specs. (And yes, I laid out the testbench as well). 
+
+
+  </p>
+
+  <!-- PDF LINKS -->
+  <div class="Documentation">
+
+    <h2>Documentation</h2>
+
+    <a class="paper-button"
+       href="Analog_Onboarding_Amira_Malave (3).pdf"
+       target="_blank">
+       Design Analysis
+    </a>
+
+    <a class="paper-button"
+       href="image.png"
+       target="_blank">
+       Design Specs
+    </a>
+
+
+  </div>
+
+</div>
+
+</body>
+</html>

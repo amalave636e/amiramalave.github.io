@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Custom 64-bit Verilog Calculator</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: #e6e6e6;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 18px;
+    background: rgba(15,17,21,0.95);
+    border-bottom: 1px solid #1f2430;
+  }
+
+  nav a {
+    color: #cfd6e1;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  nav a:hover {
+    color: #7aa2ff;
+  }
+
+  /* MAIN CONTENT */
+  .container {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .back {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #7aa2ff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .back:hover {
+    color: white;
+  }
+
+  h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    color: #7aa2ff;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  p {
+    color: #aab2c0;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* PDF SECTION */
+  .resources {
+    margin-top: 40px;
+  }
+
+  .resources h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .paper-button {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    background: #151922;
+    border: 1px solid #222838;
+    border-radius: 8px;
+    color: #7aa2ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+  }
+
+  .paper-button:hover {
+    border-color: #7aa2ff;
+    color: white;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html">home</a>
+  <a href="projects.html">projects</a>
+  <a href="blog.html">blog</a>
+  <a href="press.html">press</a>
+  <a href="reading.html">reading</a>
+</nav>
+
+<div class="container">
+
+  <a class="back" href="projects.html">
+    ← back to projects
+  </a>
+
+  <h1>Custom 64-bit Verilog Calculator</h1>
+
+  <div class="subtitle">
+    Chip Design • Digital • Circuit Design
+  </div>
+
+  <p>
+   I completed this project as part of the digital onboarding for a chip design club at my school.
+There were three phases, and we were given two weeks to complete each one. The first part was creating a 64-bit calculator capable
+of performing unsigned integer addtion using systemVerilog, which had to pass testing. Stage two was verification, and stage three was physical design.
+    </p>
+  <p>
+Going into this project, I had literally never heard of a hardware description language before, so the learning curve was definitely steep. 
+My main resources were a handy site called HDLbits, the vast wide web, and my CompE friends who actually knew what they were doing.
+Much to my suprise (and likely the suprise of the team leads), I was able to finish phase one right before the deadline! During phase
+ two, I gained skills in verification software, Xcelium, and coverage analysis. However, I managed my time a bit more poorly for this phase,
+ and ended up working on the last stages right after completing my first ever hackathon, hackGT (read about my submission, HealthDoc, in the projects page!).
+Sleep deprived from pulling two consecutive near all nighters, I accidentally tied together read and write ports... whoops. This issue took me a whooping 3
+ hours to debug, and I ended up turning in my project at 12:03 AM... just three minutes after the deadline. As a result, I didn't get to 
+attempt the physical design stage. However, I can still confidently say I grew a lot as a result of this project. 
+  </p>
+    <p>
+    First off, this was the most 
+self-learning I had done in a while, and I was pleasantly suprised with how quickly I picked up the new topic. I also learned how to utilize my resources to learn
+quickly and adapt, including the amazing resource that was my social network! Seriously, my friends are wicked smart and I'm so grateful for their guideance (shoutout to
+ Fiona Li for helping me realize I tied together my ports lol). I also realized that, while I had fun, I was more interested in analog, and physics heavy projects, than digital.
+As a result, I made the decision to attempt the analog onboarding the following semester. This time, I was successful! Read about it in the projects tab :)
+  </p>
+
+  <!-- PDF LINKS -->
+  <div class="Documentation">
+
+    <h2>Documentation</h2>
+
+    <a class="paper-button"
+       href="architecture.jpeg"
+       target="_blank">
+       Calculator Architecture
+    </a>
+
+    <a class="paper-button"
+       href="simterminal.jpeg"
+       target="_blank">
+       Simulation Terminal
+    </a>
+
+    <a class="paper-button"
+       href="CalculatorWaveforms.jpeg"
+       target="_blank">
+       Calculator Waveforms
+    </a>
+
+    <a class="paper-button"
+       href="TestPlan.png"
+       target="_blank">
+       Test Plan
+    </a>
+
+    <a class="paper-button"
+       href="Coverage.jpeg"
+       target="_blank">
+       Coverage
+    </a>
+
+    <a class="paper-button"
+       href="AssertionCoverage.jpeg"
+       target="_blank">
+       Assertion Coverage
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
